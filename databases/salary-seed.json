@@ -1,0 +1,32 @@
+[
+    {
+        "salary": 10000000,
+        "bonus": 3000000,
+        "role": "Sr. Software Engineer",
+        "employee_id": 1
+    },
+    {
+        "salary": 7500000,
+        "bonus": 1000000,
+        "role": "Jr. Backend Engineer",
+        "employee_id": 2
+    },
+    {
+        "salary": 20000000,
+        "bonus": 5000000,
+        "role": "Project Manager",
+        "employee_id": 3
+    },
+    {
+        "salary": 9000000,
+        "bonus": 2500000,
+        "role": "Sr. Software Engineer",
+        "employee_id": 4
+    },
+    {
+        "salary": 8000000,
+        "bonus": 1500000,
+        "role": "Jr. Backend Engineer",
+        "employee_id": 5
+    }
+]

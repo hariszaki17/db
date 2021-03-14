@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Joko",
+        "address": "Jl. ketupat raya no. 18",
+        "phone": "8975435779",
+        "username": "Joko18",
+        "password": "123456"
+    },
+    {
+        "name": "Joni",
+        "address": "Jl. manggis 1 no. 14",
+        "phone": "8975531231",
+        "username": "Jonijon",
+        "password": "123456"
+    },
+    {
+        "name": "Rakha",
+        "address": "Jl. durian mengkel no.76",
+        "phone": "8742312529",
+        "username": "RakhaMu",
+        "password": "123456"
+    },
+    {
+        "name": "Bambang",
+        "address": "Jl. potilik 3 no.12",
+        "phone": "8231232321",
+        "username": "Bamsky",
+        "password": "123456"
+    },
+    {
+        "name": "Yono",
+        "address": "Jl. kembang kering no.2",
+        "phone": "8923242123",
+        "username": "YonBon17",
+        "password": "123456"
+    }
+]

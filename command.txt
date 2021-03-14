@@ -1,0 +1,55 @@
+https://node-postgres.com/api/client
+
+CREATE ROLE myuser LOGIN password 'secret';
+CREATE DATABASE mydatabase ENCODING 'UTF8' OWNER myuser;
+
+step schema =>
+1. kenapa kita butuh db (karena db provides consistency, standarization, security, access availability, readable model, dll)
+2. jelasin dulu ttg proses bisnis si employee, projects dan projects feature. mulai dari cerita ttg it consultant company dia butuh simpen data ttg record project dan siapa yang ngerjain, dll.
+kasih contoh data tidak normal, terus kita kasih tau kalau semua entity jadi satu(tidak normal) sulid untuk membacanya, banyak redundant, dsb.
+3. kasih tau redundantnya dimana aja, contoh ketika kita tambahin column address, phone di employee nanti jadi banyak column yang sama dan gak bagus,
+4. kita kasih cara mecahnnya dengan indentifikasi mana aja entity(kita perhatikan businees desc nya kita bisa tau entity dari sana) kalau udh nanti kita pecah.
+5. kasih alasan ketika kita pecah itu data sbnrnya saling berhubungan dan gimana kita hubungkan 1 entitas dng lainnya = menggunakan konsep relationship PK dan FK
+6. masuk ke slide mulai dari 1to1 sampai manytomany.
+7. kasih contoh lain ttg relationship dan cara buat diagramnya:
+example 1to1 => passport and person
+example many to many => car rent: 1 car can belong to many user, 1 user can belong to many car.
+example 1 to many => parent and child => 1 parent can have many child, 1 child only have 1 parent. atm(bank account) and person => 1 person can have many bank account, 1 bank account only belong to one person.
+
+
+step db implementation => 
+1. suruh install pg dulu, sama rdms clientnya (dbeaver)
+2. kalo udh coba connect ke dbeaver
+3. buat DDL sederhanya 1 table (create, drop, alter)
+4. buat insert dan select sederhanya. buat implementasinya di js pakai pg query liat resultnya
+5. buat implementasi setup.js di app, kasih tau dulu cara pakai npm init, npm i pg dan buat connection pool
+6. buat seeding data (bulk insert) biar nanti kita bisa pakai query yang lebih advance lewat rdbms
+7. contohin query advance di rdbms
+8. buat implementasinya di js, pakai client query biasa
+
+create table if not exists "coba" (
+	"id" serial primary key,
+	"name" varchar(50) not null
+)
+
+drop table "coba"
+
+use database db_lecture
+
+alter table coba 
+add column date_created date
+
+alter table coba 
+drop column date_created
+
+update coba 
+set name = 'new name' where id = 1
+
+insert into coba (name)
+values ('wadidawww 2')
+
+select * from coba c 
+order by id desc
+
+select * from coba c 
+where name like '%test%'

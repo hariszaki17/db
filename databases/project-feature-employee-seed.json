@@ -1,0 +1,30 @@
+[
+    {
+        "project_feature_id": 2,
+        "employee_id": 1
+    },
+    {
+        "project_feature_id": 1,
+        "employee_id": 1
+    },
+    {
+        "project_feature_id": 3,
+        "employee_id": 2
+    },
+    {
+        "project_feature_id": 5,
+        "employee_id": 3
+    },
+    {
+        "project_feature_id": 4,
+        "employee_id": 5
+    },
+    {
+        "project_feature_id": 4,
+        "employee_id": 4
+    },
+    {
+        "project_feature_id": 1,
+        "employee_id": 3
+    }
+]
